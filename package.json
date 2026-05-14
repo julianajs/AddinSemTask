@@ -1,0 +1,26 @@
+{
+  "name": "outlook-monitorar-addin",
+  "version": "1.0.0",
+  "description": "Add-in do Outlook para enviar dados de reuniões ao Power Automate pelo botão Monitorar.",
+  "scripts": {
+    "start": "office-addin-debugging start manifest.xml desktop",
+    "stop": "office-addin-debugging stop manifest.xml",
+    "validate": "office-addin-manifest validate manifest.xml",
+    "build": "webpack --mode production",
+    "dev-server": "webpack serve --mode development"
+  },
+  "devDependencies": {
+    "@types/office-js": "latest",
+    "copy-webpack-plugin": "latest",
+    "html-webpack-plugin": "latest",
+    "office-addin-debugging": "latest",
+    "office-addin-manifest": "latest",
+    "webpack": "latest",
+    "webpack-cli": "latest",
+    "webpack-dev-server": "latest"
+  },
+  "dependencies": {
+    "core-js": "latest",
+    "regenerator-runtime": "latest"
+  }
+}
